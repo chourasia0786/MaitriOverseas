@@ -1,0 +1,103 @@
+MAITRI OVERSEAS — WEBSITE FILES
+================================================================
+Hosting: GitHub Pages (static). No PHP, no database, no server.
+
+
+WHAT TO UPLOAD
+--------------
+Push ALL of these to your GitHub repository, in the same folder:
+
+    index.html
+    thanks.html
+    style.css
+    img/            (the whole folder — photos and videos)
+
+That is the complete site.
+
+NOTE: the old send-enquiry.php has been DELETED. GitHub Pages
+cannot run PHP — it only serves files. If that file is still in
+your repo, delete it.
+
+
+================================================================
+STEP 1 — MAKE THE ENQUIRY FORM WORK  (2 minutes, must be done)
+================================================================
+The form sends enquiries by email using a free service called
+Web3Forms. It needs one key pasted into index.html.
+
+  1. Go to  https://web3forms.com
+  2. Enter  maitrioverseas@gmail.com  and click Create Access Key
+  3. Check that inbox — the key is emailed to you immediately.
+     It looks like:  a1b2c3d4-5678-90ab-cdef-1234567890ab
+  4. Open index.html in any text editor
+  5. Find this line (use Ctrl+F for "PASTE"):
+
+        <input type="hidden" name="access_key" value="PASTE-YOUR-ACCESS-KEY-HERE">
+
+  6. Replace PASTE-YOUR-ACCESS-KEY-HERE with your key. Keep the
+     quote marks. It should end up looking like:
+
+        <input type="hidden" name="access_key" value="a1b2c3d4-5678-90ab-cdef-1234567890ab">
+
+  7. Save and push to GitHub.
+
+The key is NOT a password. It is safe to have it visible in the
+page — it only forwards mail to your address, nothing else.
+
+FREE LIMIT: 250 enquiries per month. Far more than you will get.
+
+
+STEP 2 — TEST IT YOURSELF FIRST
+-------------------------------
+Open the live site, fill the form in with your own details, send.
+
+  - You should see "Thank you. We have it." appear on the page.
+  - An email should reach maitrioverseas@gmail.com within a minute.
+
+CHECK THE SPAM FOLDER. The first one often lands there. Mark it
+"Not spam" and later ones arrive in the inbox normally.
+
+If you see a red error box instead, the access key is wrong or
+missing. Redo Step 1.
+
+
+IF THE KEY IS NOT SET YET
+-------------------------
+Nobody gets stranded. A red notice appears with a link that opens
+the visitor's own email app with every field already filled in, plus
+a WhatsApp link. But fix Step 1 — most people will not bother.
+
+
+================================================================
+WHAT THE FORM COLLECTS
+================================================================
+Required:  Name, Company, Mobile, Email, Product, Size, Quantity
+Optional:  Delivery location, Grade, Finish, Thickness, Repeat
+           frequency, Required-by date, Mill preference,
+           Application notes, drawing-to-follow
+
+Spam is stopped by a hidden field only bots fill in. No CAPTCHA,
+so real customers are never made to prove anything.
+
+
+ABOUT DRAWINGS AND ATTACHMENTS
+------------------------------
+File upload is NOT included on the free plan, so the form asks the
+customer to email the drawing to maitrioverseas@gmail.com instead.
+The thank-you message reminds them.
+
+If you want customers to attach drawings directly:
+  - Web3Forms Pro, about $12/month, adds file uploads, OR
+  - move hosting to Netlify or Cloudflare Pages (both free, both
+    deploy from this same GitHub repo, both allow attachments)
+
+Ask me and I will set either one up.
+
+
+CHANGING TEXT LATER
+-------------------
+All the words are in index.html. Open in a text editor, Ctrl+F to
+find the text, change it, save, push. Do not rename any file.
+
+================================================================
+Maitri Overseas · Opera House, Mumbai · Taloja MIDC, Dist. Thane
